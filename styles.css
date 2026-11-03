@@ -39,6 +39,8 @@ a {
   padding: 0 16px;
 }
 
+
+
 /* Header & Navigation */
 header {
   background: var(--bg-white);
@@ -86,6 +88,8 @@ header {
 .nav-links a.active {
   color: var(--primary-blue);
 }
+
+
 
 /* Accessible Buttons */
 .btn {
@@ -137,6 +141,21 @@ header {
   color: #ffffff;
 }
 
+.btn-white {
+  background-color: #ffffff;
+  color: var(--navy-dark) !important;
+  border: 2px solid #ffffff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+  background-color: #f1f5f9;
+  border-color: #f1f5f9;
+  color: var(--navy-dark) !important;
+}
+
+
+
 /* Hero Section */
 .hero {
   background: var(--bg-white);
@@ -172,6 +191,8 @@ header {
   flex-wrap: wrap;
 }
 
+
+
 /* Photo Slots */
 .photo-slot {
   width: 100%;
@@ -194,6 +215,8 @@ header {
   font-size: 0.95rem;
 }
 
+
+
 /* General Sections */
 .section {
   padding: 80px 0;
@@ -215,6 +238,8 @@ header {
   max-width: 680px;
   margin: 0 auto 48px auto;
 }
+
+
 
 /* Steps Grid */
 .steps-grid {
@@ -249,6 +274,8 @@ header {
   color: var(--text-muted);
   font-size: 0.98rem;
 }
+
+
 
 /* Services Grid */
 .services-grid {
@@ -291,6 +318,8 @@ header {
   font-size: 0.95rem;
 }
 
+
+
 /* Benefits Grid */
 .benefits-grid {
   display: grid;
@@ -320,6 +349,8 @@ header {
   color: var(--text-muted);
   font-size: 0.95rem;
 }
+
+
 
 /* Banner CTA */
 .cta-banner {
@@ -352,6 +383,8 @@ header {
   font-size: 1rem;
   color: #e2e8f0;
 }
+
+
 
 /* Footer */
 footer {
@@ -395,6 +428,8 @@ footer {
   flex-wrap: wrap;
   gap: 16px;
 }
+
+
 
 /* Responsive */
 @media (max-width: 860px) {
