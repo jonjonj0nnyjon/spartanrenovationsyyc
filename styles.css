@@ -269,7 +269,8 @@ header {
 
 .service-card > img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1 !important;
+  height: auto !important;
   object-fit: cover;
   display: block;
 }
