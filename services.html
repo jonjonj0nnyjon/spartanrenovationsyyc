@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Spartan Renovations</title>
+  <meta name="description" content="Explore our complete handyman and small-scale general contracting services. Transparent flat-rate and scope-based pricing.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .services-header {
+      background: var(--bg-white);
+      padding: 56px 0;
+      border-bottom: 1px solid var(--border-color);
+      text-align: center;
+    }
+    .services-list-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .service-category-box {
+      background: var(--bg-white);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--card-shadow);
+    }
+    .service-category-box h3 {
+      font-size: 1.35rem;
+      color: var(--navy-dark);
+      margin-bottom: 18px;
+      border-bottom: 2px solid var(--primary-blue);
+      padding-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+    }
+    .service-category-box ul {
+      list-style: none;
+    }
+    .service-category-box ul li {
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--border-color);
+      font-size: 0.98rem;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .service-category-box ul li:last-child {
+      border-bottom: none;
+    }
+    .service-category-box ul li::before {
+      content: "•";
+      color: var(--primary-blue);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .pricing-policy-card {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-top: 56px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo-link">
+        <!-- PHOTO OR LOGO: Transparent logo -->
+        <img src="images/logo.png" alt="Spartan Renovations Logo" class="brand-logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services & Rates</a></li>
+        <li><a href="contact.html">Contact & Estimates</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Get an Estimate</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="services-header">
+    <div class="container">
+      <h1 style="font-size: 2.6rem; color: var(--navy-dark); margin-bottom: 16px; font-weight: 800;">Our Services</h1>
+      <p style="max-width: 800px; margin: 0 auto; font-size: 1.15rem; color: var(--text-muted);">
+        From minor household fixes and modern fixture upgrades to custom carpentry and outdoor improvements, Spartan Renovations provides reliable, professional handyman services to keep your home in top shape. Whether you have a single repair or a running to-do list, every project is completed with clean craftsmanship, clear upfront pricing, and respect for your home.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN SERVICES INVENTORY -->
+  <section class="section">
+    <div class="container">
+
+      <!-- PHOTO: Optional Services Banner Photo -->
+      <div class="photo-slot" style="min-height: 200px; margin-bottom: 40px;">
+        <span><!-- PHOTO: Workshop / Project Gallery Banner Image --></span>
+      </div>
+
+      <div class="services-list-grid">
+
+        <!-- Category 1 -->
+        <div class="service-category-box">
+          <h3>Plumbing Fixture Upgrades</h3>
+          <ul>
+            <li>Kitchen & Vanity Faucet Replacement</li>
+            <li>Toilet Repair & Complete Replacement</li>
+            <li>Showerhead & Wand Upgrades</li>
+            <li>Washing Machine Hose Replacement</li>
+            <li>Garbage Disposal Replacement</li>
+            <li>Silicone Caulk Removal & Re-Sealing</li>
+          </ul>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="service-category-box">
+          <h3>Electrical & Lighting Upgrades</h3>
+          <ul>
+            <li>Standard Light Fixture Replacement</li>
+            <li>Ceiling Fan Installation</li>
+            <li>Light Switch & Outlet Upgrades (Standard & Smart)</li>
+            <li>Smoke & Carbon Monoxide Detector Replacement</li>
+            <li>Over-the-Range Microwave Replacement</li>
+            <li>Dishwasher Installation</li>
+          </ul>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="service-category-box">
+          <h3>Doors, Hardware & Windows</h3>
+          <ul>
+            <li>Interior Pre-Hung & Slab Door Installation</li>
+            <li>Bi-Fold & Sliding Closet Door Repair & Install</li>
+            <li>Storm Door & Screen Door Installation</li>
+            <li>Exterior Entry Door Replacement</li>
+            <li>Standard & Smart Lockset Installation</li>
+            <li>Weatherstripping & Door Sweeps</li>
+            <li>Window Screen Rescreening & Repair</li>
+            <li>Blinds, Shades & Curtain Rod Installation</li>
+            <li>Cabinet Hardware Pulls, Knobs & Hinges</li>
+          </ul>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="service-category-box">
+          <h3>Drywall, Paint & Trim Carpentry</h3>
+          <ul>
+            <li>Drywall Repair & Patching</li>
+            <li>Baseboard & Casing Installation</li>
+            <li>Interior Wall, Ceiling & Trim Painting</li>
+            <li>Kitchen Backsplash Tile Installation</li>
+            <li>Grout Repair & Re-Grouting</li>
+            <li>Luxury Vinyl Plank (LVP) & Laminate Flooring</li>
+          </ul>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="service-category-box">
+          <h3>Wall Mounting & Assembly</h3>
+          <ul>
+            <li>TV Wall Mounting</li>
+            <li>Heavy Mirrors & Art Hanging</li>
+            <li>Floating Shelves & Closet Organizers</li>
+            <li>Overhead & Wall Garage Storage Racks</li>
+            <li>Custom Storage Shelving Builds</li>
+            <li>Furniture & Exercise Equipment Assembly</li>
+          </ul>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="service-category-box">
+          <h3>Decks, Fences & Exterior Care</h3>
+          <ul>
+            <li>Low-Profile Deck Construction (&le; 24" Above Grade)</li>
+            <li>Deck Resurfacing, Board Repair & Railings</li>
+            <li>Deck & Fence Power Washing, Sanding & Staining</li>
+            <li>Wood Fence Construction & Post Replacement</li>
+            <li>Wood Fence Gate Builds & Repairs</li>
+            <li>Exterior Window & Door Caulking</li>
+            <li>Driveway, Sidewalk & Patio Pressure Washing</li>
+            <li>Storage Shed & Playset Assembly</li>
+            <li>Foundation Soil Grading, Mulch & Rock Top-Ups</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- POLICY & MINIMUM CALL BOX -->
+      <div class="pricing-policy-card">
+        <h3 style="color: var(--navy-dark); margin-bottom: 12px; font-size: 1.3rem;">Have a Project in Mind?</h3>
+        <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 16px;">
+          Don't see your specific task listed? If it’s around your home or yard and doesn't require a specialized municipal permit or trade ticket, chances are we can take care of it.
+        </p>
+        <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 24px;">
+          <strong>Standard Service Calls:</strong> Our standard service visit covers initial diagnostics and minor single-item repairs, with bundled flat-rate pricing available when combining multiple items in a single visit.
+        </p>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary">Request an Estimate</a>
+          <a href="contact.html" class="btn btn-outline">Ask About a Custom Project</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <!-- PHOTO OR LOGO: Footer logo -->
+          <img src="images/logo.png" alt="Spartan Renovations Logo" style="height: 38px; width: auto; margin-bottom: 16px; display: block; filter: brightness(0) invert(1);">
+          <p style="margin-bottom: 12px; color: #cbd5e1;">Handyman Services & Small-Scale General Contracting.</p>
+          <p>Professional residential repairs, fixture replacements, and custom outdoor carpentry built to last.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services & Rates</a></li>
+            <li><a href="contact.html">Contact & Estimates</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#instagram" target="_blank" rel="noopener">Instagram: @YourHandle</a></li>
+            <li><a href="#facebook" target="_blank" rel="noopener">Facebook: /YourBusiness</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Spartan Renovations. All rights reserved.</div>
+        <div>Specialized in residential repairs and permit-exempt carpentry projects under 24" above grade.</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

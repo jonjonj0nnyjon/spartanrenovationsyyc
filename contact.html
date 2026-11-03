@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Free Estimates | Spartan Renovations</title>
+  <meta name="description" content="Request a free estimate or get in touch with Spartan Renovations for handyman and small-scale general contracting. Fast, clear communication.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 48px;
+      margin-top: 40px;
+    }
+    .estimate-form-card {
+      background: var(--bg-white);
+      padding: 36px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--card-shadow);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--navy-dark);
+      font-size: 0.95rem;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary-blue);
+      box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
+    }
+    textarea.form-control {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .info-card {
+      background: var(--bg-white);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: var(--card-shadow);
+    }
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .info-item:last-child {
+      margin-bottom: 0;
+    }
+    .info-icon {
+      width: 40px;
+      height: 40px;
+      background: #eff6ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-blue);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    @media (max-width: 860px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo-link">
+        <!-- PHOTO OR LOGO: Transparent logo -->
+        <img src="images/logo.png" alt="Spartan Renovations Logo" class="brand-logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services & Rates</a></li>
+        <li><a href="contact.html" class="active">Contact & Estimates</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Get an Estimate</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="section" style="padding: 56px 0 20px 0;">
+    <div class="container">
+      <h1 class="section-title">Request an Estimate & Contact Us</h1>
+      <p class="section-subtitle">Send us details about your project, to-do list, or repairs. We review your request and get back to you with clear, upfront pricing.</p>
+
+      <div class="contact-layout">
+
+        <!-- ESTIMATE FORM -->
+        <div class="estimate-form-card">
+          <h2 style="font-size: 1.5rem; color: var(--navy-dark); margin-bottom: 20px; font-weight: 700;">Tell Us About Your Project</h2>
+          
+          <!-- Replace action URL with your Formspree/Netlify endpoint when ready -->
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div>
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="(403) 000-0000" required>
+              </div>
+              <div>
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="location">Neighborhood / Area (Calgary & Area) *</label>
+              <input type="text" id="location" name="location" class="form-control" placeholder="e.g. SW Calgary, Cochrane, Airdrie..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="project_type">Service Category</label>
+              <select id="project_type" name="project_type" class="form-control">
+                <option value="General To-Do List">General Multi-Item Handyman List</option>
+                <option value="Plumbing Fixtures">Plumbing Fixture Upgrade</option>
+                <option value="Electrical / Lighting">Lighting or Electrical Upgrade</option>
+                <option value="Carpentry / Drywall / Paint">Carpentry, Drywall, or Painting</option>
+                <option value="Deck / Fence / Exterior">Deck, Fence, or Exterior Work</option>
+                <option value="Mounting / Assembly">TV Mounting or Furniture Assembly</option>
+                <option value="Other">Other / Custom Project</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="description">Project Description & Details *</label>
+              <textarea id="description" name="description" class="form-control" placeholder="Please list the tasks or describe the project. Mention approximate sizes or any specifics..." required></textarea>
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
+              💡 <em>Have photos of your project? Once you submit this form, you can text or email photos directly to our phone or inbox for the fastest turnaround.</em>
+            </p>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.05rem;">Submit Estimate Request</button>
+          </form>
+        </div>
+
+        <!-- DIRECT CONTACT & DETAILS -->
+        <div>
+          <div class="info-card">
+            <h3 style="font-size: 1.3rem; color: var(--navy-dark); margin-bottom: 20px; font-weight: 700;">Direct Contact Information</h3>
+            
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div>
+                <strong>Phone & Text</strong>
+                <p style="color: var(--text-muted);">[Insert Phone Number]</p>
+                <span style="font-size: 0.85rem; color: #64748b;">Texting photos of your project is welcomed!</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <p style="color: var(--text-muted);">[Insert Email Address]</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <strong>Service Area</strong>
+                <p style="color: var(--text-muted);">Calgary, Alberta & Surrounding Communities</p>
+                <span style="font-size: 0.85rem; color: #64748b;">Residential service calls within 30km radius</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">🕒</div>
+              <div>
+                <strong>Business Hours</strong>
+                <p style="color: var(--text-muted);">Monday – Friday: 8:00 AM – 5:00 PM</p>
+                <p style="color: var(--text-muted);">Saturday: By Appointment</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PHOTO OR LOGO: Side panel photo (work van, neat tools, or friendly headshot) -->
+          <div class="photo-slot" style="min-height: 240px;">
+            <!-- <img src="images/service-truck.jpg" alt="Service Vehicle Ready to Dispatch" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;"> -->
+            <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.25V3.75c0-.621-.504-1.125-1.125-1.125h-9.75c-.621 0-1.125.504-1.125 1.125v10.5c0 .621.504 1.125 1.125 1.125h1.5"/></svg>
+            <span><!-- PHOTO: Service Vehicle / Mobile Workshop Photo --></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="margin-top: 60px;">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <!-- PHOTO OR LOGO: Footer logo -->
+          <img src="images/logo.png" alt="Spartan Renovations Logo" style="height: 38px; width: auto; margin-bottom: 16px; display: block; filter: brightness(0) invert(1);">
+          <p style="margin-bottom: 12px; color: #cbd5e1;">Handyman Services & Small-Scale General Contracting.</p>
+          <p>Professional residential repairs, fixture replacements, and custom outdoor carpentry built to last.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services & Rates</a></li>
+            <li><a href="contact.html">Contact & Estimates</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#instagram" target="_blank" rel="noopener">Instagram: @YourHandle</a></li>
+            <li><a href="#facebook" target="_blank" rel="noopener">Facebook: /YourBusiness</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Spartan Renovations. All rights reserved.</div>
+        <div>Specialized in residential repairs and permit-exempt carpentry projects under 24" above grade.</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
