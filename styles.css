@@ -101,7 +101,7 @@ header {
 
 .btn-primary {
   background: var(--primary-blue);
-  color: #ffffff;
+  color: #ffffff !important;
   border: 2px solid var(--primary-blue);
 }
 
